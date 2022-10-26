@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://defaulttheme.tres" type="Theme" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://upgrade.gd" type="Script" id=3]
+
+[node name="upgrade" type="Button"]
+margin_right = 340.0
+margin_bottom = 75.0
+theme = ExtResource( 1 )
+icon = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_upgrade_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_upgrade_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_upgrade_pressed"]
